@@ -1,6 +1,7 @@
 # Habit Tracker (Pelacak Kebiasaan)
 
-Aplikasi Habit Tracker berbasis web untuk mencatat dan melacak kebiasaan harian serta progres mingguan. Dibuat untuk memenuhi tugas **UTS Pemrograman Front-End**.
+Aplikasi **Habit Tracker (Pelacak Kebiasaan)** berbasis web untuk membantu pengguna melacak perkembangan kebiasaan setiap minggu.  
+Pengguna dapat menambahkan kebiasaan, mencentang aktivitas setiap hari, melihat progress bar harian, serta statistik pencapaian mingguan.
 
 ## 🎯 Fitur Utama
 - Tambah kebiasaan baru
@@ -33,7 +34,3 @@ Aplikasi Habit Tracker berbasis web untuk mencatat dan melacak kebiasaan harian 
 ## 🎨 Desain Figma
 Link desain mockup pada Figma:  
 > **(Tambahkan link Figma kamu di sini)**
-
-## 🚀 Cara Menjalankan
-1. Download semua file dalam repository ini
-2. Pastikan struktur file seperti berikut:
