@@ -39,6 +39,5 @@ Link desain mockup pada Figma:
 
 ## 👤 Pembuat
 Nama: Ratih Zahra Nur Aulia 
-
 Kelas / Prodi: Reguler/Informatika  
 Mata kuliah: Pemrograman Front-End 
