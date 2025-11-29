@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Habit Tracker — Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="container header-inner">
+      <h1>Habit Tracker</h1>
+      <p class="subtitle">Pelacak kebiasaan — catat, centang, dan lihat progres mingguan</p>
+      <div class="header-actions">
+        <a class="btn primary" id="btn-add" href="edit.html">+ Tambah Kebiasaan</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="panel list-panel" aria-labelledby="list-heading">
+      <h2 id="list-heading">Daftar Kebiasaan - Minggu Ini</h2>
+
+      <div class="week-header" id="week-header"></div>
+
+      <div id="habit-list" class="habit-list" role="list"></div>
+
+      <div id="empty-msg" class="empty-msg" hidden>
+        Belum ada kebiasaan. Klik "Tambah Kebiasaan" untuk memulai.
+      </div>
+
+    </section>
+
+    <aside class="panel stats-panel" aria-labelledby="stats-heading">
+      <h2 id="stats-heading">Panel Kontrol & Statistik</h2>
+
+      <div class="controls">
+        <button class="btn ghost" id="btn-reset-week">Reset Minggu</button>
+        <button class="btn ghost" id="btn-clear-all">Hapus Semua Kebiasaan</button>
+      </div>
+
+      <div class="stats-box" id="weekly-stats" aria-live="polite"></div>
+    </aside>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container">
+      <small>tugas UTS <code>pemograman front-end</code></small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

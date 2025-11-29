@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tambah / Edit Kebiasaan — Habit Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="container header-inner">
+      <h1 id="page-title">Tambah Kebiasaan</h1>
+      <p class="subtitle">Isi detail kebiasaan lalu simpan.</p>
+    </div>
+  </header>
+
+  <main class="container form-container">
+    <section class="panel add-panel" aria-labelledby="form-heading">
+      <h2 id="form-heading">Form Kebiasaan</h2>
+
+      <form id="habit-form" class="edit-form" autocomplete="off">
+        <div class="form-group">
+          <label for="name">Nama Kebiasaan <span class="required">*</span></label>
+          <input id="name" name="name" type="text" required maxlength="80" placeholder="Contoh: Minum Air"/>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Deskripsi (opsional)</label>
+          <textarea id="description" name="description" rows="3" placeholder="Deskripsi singkat kebiasaan..."></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="goal">Target per minggu</label>
+            <input id="goal" name="goal" type="number" min="1" max="7" placeholder="mis. 5" />
+          </div>
+
+          <div class="form-group">
+            <label for="category">Kategori</label>
+            <select id="category" name="category">
+              <option value="Kesehatan">Kesehatan</option>
+              <option value="Belajar">Belajar</option>
+              <option value="Produktivitas">Produktivitas</option>
+              <option value="Ibadah">Ibadah</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row align-center">
+          <div class="form-group">
+            <label for="color">Warna (default acak)</label>
+            <input id="color" name="color" type="color" />
+          </div>
+
+          <div class="form-group small muted">
+            <label>Atau pilih warna cepat</label>
+            <div id="preset-colors" class="preset-colors"></div>
+          </div>
+        </div>
+
+        <div class="form-row actions">
+          <button class="btn primary" type="submit" id="save-btn">Simpan</button>
+          <a class="btn ghost" id="cancel-btn" href="index.html">Batal</a>
+          <button type="button" id="delete-btn" class="btn danger" hidden>Hapus Kebiasaan</button>
+        </div>
+      </form>
+
+    </section>
+  </main>
+
+  <script src="edit.js" defer></script>
+</body>
+</html>
